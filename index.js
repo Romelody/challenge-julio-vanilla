@@ -12,7 +12,7 @@ the order of a static array of colors.
 
 2
 Clones will be displayed when the user clicks the main container.
-Once the click is fired, clones should move down in order stacking one after the other in a row.
+Once the click is fired, clones should move down stacking one below the other on a single column.
 A video reference is provided with the desired behaviour.
 
 
