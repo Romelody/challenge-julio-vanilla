@@ -34,7 +34,7 @@ main{
     min-height: 100vh;
 }
 
-main .content{
+main .box{
     display: flex;
     align-items: center;
     justify-content: center;
