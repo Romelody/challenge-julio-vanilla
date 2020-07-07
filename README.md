@@ -1,29 +1,30 @@
-# README #
+### OFFCODE
 
-This README would normally document whatever steps are necessary to get your application up and running.
+# Vanilla JS \ CLONES
 
-### What is this repository for? ###
+## 1
+Create a function that stacks n clones behind the a target element.
+This function should create and append each clone behind the target, while assigning a background color following
+the order of a static array of colors.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## 2
+Clones will be displayed when the user clicks the main container.
+Once the click is fired, clones should move down in order stacking one after the other in a row.
+A video reference is provided with the desired behaviour.
 
-### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### RULES:
+* HTML should NOT be edited.
+* LIBRARIES ARE NOT ALLOWED. Only good old js.
+* Clones amount will alwais be an integer.
+* Color array can have any number of colors declared.
+* Color order is mandatory.
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+### TIPS:
+* Use the video as reference, it's just more simple to understand.
+* JS and CSS are both aviliable to edit, use it!
+* If you have questions related to the challenge, just ask.
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### More
+Open `index.js`
