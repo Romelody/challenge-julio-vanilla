@@ -16,9 +16,9 @@ A video reference is provided with the desired behaviour.
 ### RULES:
 * HTML should NOT be edited.
 * LIBRARIES ARE NOT ALLOWED. Only good old js.
-* Clones amount will alwais be an integer.
+* Clones amount is an integer value.
 * Color array can have any number of colors declared.
-* Color order is mandatory.
+* Color order must be followed.
 
 
 ### TIPS:
