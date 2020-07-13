@@ -46,6 +46,10 @@ var box;
 
 var isOpen = false;
 
+function getColor(number){
+    return '#' + palette[number%palette.length];
+}
+
 /**
  * Create n clones and append the behind the target element.
  * @param {HTML Element} target 
@@ -53,6 +57,13 @@ var isOpen = false;
  */
 function createOffsetClones(target, numberOfClones){
     let createdElements = [];
+    for(var i = 0; i < numberOfClones; i++){
+        let element = target.cloneNode(true);
+        element.style.background = getColor(i);
+        element.classList.add('clone');
+        createdElements.push(element);
+    }
+    
     return createdElements;
 }
 
@@ -61,14 +72,21 @@ function createOffsetClones(target, numberOfClones){
  * @param {MouseEvent} event 
  */
 function click(event){
+    if(event.target.classList[1] === 'clone'){
+        container.innerHTML = '';
+        container.appendChild(box);
+    } else {
+        for(var elem of elems){
+            container.appendChild(elem);
+        }
+    }
     
 }
 
-
 // container element reference. This should be clicked.
-container = null;
+container = document.getElementsByClassName('container')[0];
 // box element reference. This should be cloned.
-box = null;
+box = document.getElementsByClassName('box')[0];
 // get the elemens
 elems = createOffsetClones(box, 12);
 
